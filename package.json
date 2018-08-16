@@ -1,0 +1,37 @@
+{
+  "name": "simple-gulp-epub-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development gulp dev --require @babel/register",
+    "build:proof": "NODE_ENV=development gulp buildProof --require @babel/register",
+    "build:epub": "NODE_ENV=production gulp buildEpub --require @babel/register",
+    "build:validate": "NODE_ENV=production gulp buildValidate --require @babel/register",
+    "validate": "NODE_ENV=production gulp validate --require @babel/register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/register": "^7.0.0-rc.1",
+    "autoprefixer": "^9.1.1",
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-if": "^2.0.2",
+    "gulp-image": "^4.3.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-zip": "^4.2.0",
+    "lodash": "^4.17.10"
+  }
+}
