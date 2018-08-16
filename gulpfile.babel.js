@@ -154,7 +154,7 @@ export const images = () =>
   gulp
     .src([imageSource])
     .pipe(image(imageOptions))
-    .pipe(gulp.dest(buildContentDirectoryPath));
+    .pipe(gulp.dest(`${buildContentDirectoryPath}/images/`));
 
 export const watchImages = () =>
   gulp.watch(imageSource, gulp.series('images', 'reload'));
